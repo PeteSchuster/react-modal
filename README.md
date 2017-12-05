@@ -258,7 +258,7 @@ class App extends React.Component {
         >
 
           <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
-          <button onClick={this.closeModal}>close</button>
+          <button onClick={this.closeModal} type="button">close</button>
           <div>I am a modal</div>
           <form>
             <input />
@@ -299,7 +299,7 @@ pass the 'shouldCloseOnOverlayClick' prop with 'false' value.
 
   <h1>Force Modal</h1>
   <p>Modal cannot be closed when clicking the overlay area</p>
-  <button onClick={handleCloseFunc}>Close Modal...</button>
+  <button onClick={handleCloseFunc} type="button">Close Modal...</button>
 </Modal>
 ```
 
